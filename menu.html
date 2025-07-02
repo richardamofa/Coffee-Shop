@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Brew & Bean</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Brew & Bean</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link active">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link cart-link">
+                        Cart (<span id="cart-count">0</span>)
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Header -->
+    <section class="menu-header">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p>Discover our carefully crafted selection of coffee and treats</p>
+        </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="menu-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all">All</button>
+                <button class="tab-btn" data-category="coffee">Coffee</button>
+                <button class="tab-btn" data-category="tea">Tea</button>
+                <button class="tab-btn" data-category="pastries">Pastries</button>
+                <button class="tab-btn" data-category="sandwiches">Sandwiches</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Items -->
+    <section class="menu-items">
+        <div class="container">
+            <div class="menu-grid" id="menu-grid">
+                <!-- Coffee Items -->
+                <div class="menu-item" data-category="coffee">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Espresso">
+                    <div class="item-info">
+                        <h3>Espresso</h3>
+                        <p>Rich and bold espresso shot</p>
+                        <div class="item-footer">
+                            <span class="price">$3.50</span>
+                            <button class="btn btn-primary add-to-cart" 
+                                    data-id="1" 
+                                    data-name="Espresso" 
+                                    data-price="3.50" 
+                                    data-image="/placeholder.svg?height=200&width=200">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="coffee">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Americano">
+                    <div class="item-info">
+                        <h3>Americano</h3>
+                        <p>Espresso with hot water</p>
+                        <div class="item-footer">
+                            <span class="price">$3.75</span>
+                            <button class="btn btn-primary add-to-cart" 
+                                    data-id="2" 
+                                    data-name="Americano" 
+                                    data-price="3.75" 
+                                    data-image="/placeholder.svg?height=200&width=200">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="coffee">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Cappuccino">
+                    <div class="item-info">
+                        <h3>Cappuccino</h3>
+                        <p>Espresso with steamed milk and foam</p>
+                        <div class="item-footer">
+                            <span class="price">$4.25</span>
+                            <button class="btn btn-primary add-to-cart" 
+                                    data-id="3" 
+                                    data-name="Cappuccino" 
+                                    data-price="4.25" 
+                                    data-image="/placeholder.svg?height=200&width=200">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="coffee">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Latte">
+                    <div class="item-info">
+                        <h3>Latte</h3>
+                        <p>Espresso with steamed milk</p>
+                        <div class="item-footer">
+                            <span class="price">$4.50</span>
+                            <button class="btn btn-primary add-to-cart" 
+                                    data-id="4" 
+                                    data-name="Latte" 
+                                    data-price="4.50" 
+                                    data-image="/placeholder.svg?height=200&width=200">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="coffee">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Mocha">
+                    <div class="item-info">
+                        <h3>Mocha</h3>
+                        <p>Espresso with chocolate and steamed milk</p>
+                        <div class="item-footer">
+                            <span class="price">$4.75</span>
+                            <button class="btn btn-primary add-to-cart" 
+                                    data-id="5" 
+                                    data-name="Mocha" 
+                                    data-price="4.75" 
+                                    data-image="/placeholder.svg?height=200&width=200">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="coffee">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Macchiato">
+                    <div class="item-info">
+                        <h3>Macchiato</h3>
+                        <p>Espresso with a dollop of foamed milk</p>
+                        <div class="item-footer">
+                            <span class="price">$4.00</span>
+                            <button class="btn btn-primary add-to-cart" 
+                                    data-id="6" 
+                                    data-name="Macchiato" 
+                                    data-price="4.00" 
+                                    data-image="/placeholder.svg?height=200&width=200">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tea Items -->
+                <div class="menu-item" data-category="tea">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Green Tea">
+                    <div class="item-info">
+                        <h3>Green Tea</h3>
+                        <p>Premium organic green tea</p>
+                        <div class="item-footer">
+                            <span class="price">$2.50</span>
+                            <button class="btn btn-primary add-to-cart" 
+                                    data-id="7" 
+                                    data-name="Green Tea" 
+                                    data-price="2.50" 
+                                    data-image="/placeholder.svg?height=200&width=200">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="tea">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Earl Grey">
+                    <div class="item-info">
+                        <h3>Earl Grey</h3>
+                        <p>Classic black tea with bergamot</p>
+                        <div class="item-footer">
+                            <span class="price">$2.75</span>
+                            <button class="btn btn-primary add-to-cart" 
+                                    data-id="8" 
+                                    data-name="Earl Grey" 
+                                    data-price="2.75" 
+                                    data-image="/placeholder.svg?height=200&width=200">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="tea">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Chamomile">
+                    <div class="item-info">
+                        <h3>Chamomile</h3>
+                        <p>Soothing herbal tea</p>
+                        <div class="item-footer">
+                            <span class="price">$2.25</span>
+                            <button class="btn btn-primary add-to-cart" 
+                                    data-id="9" 
+                                    data-name="Chamomile" 
+                                    data-price="2.25" 
+                                    data-image="/placeholder.svg?height=200&width=200">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pastries -->
+                <div class="menu-item" data-category="pastries">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Croissant">
+                    <div class="item-info">
+                        <h3>Butter Croissant</h3>
+                        <p>Flaky, buttery French pastry</p>
+                        <div class="item-footer">
+                            <span class="price">$3.25</span>
+                            <button class="btn btn-primary add-to-cart" 
+                                    data-id="10" 
+                                    data-name="Butter Croissant" 
+                                    data-price="3.25" 
+                                    data-image="/placeholder.svg?height=200&width=200">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="pastries">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Muffin">
+                    <div class="item-info">
+                        <h3>Blueberry Muffin</h3>
+                        <p>Fresh baked with wild blueberries</p>
+                        <div class="item-footer">
+                            <span class="price">$2.75</span>
+                            <button class="btn btn-primary add-to-cart" 
+                                    data-id="11" 
+                                    data-name="Blueberry Muffin" 
+                                    data-price="2.75" 
+                                    data-image="/placeholder.svg?height=200&width=200">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="pastries">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Danish">
+                    <div class="item-info">
+                        <h3>Cheese Danish</h3>
+                        <p>Sweet pastry with cream cheese filling</p>
+                        <div class="item-footer">
+                            <span class="price">$3.50</span>
+                            <button class="btn btn-primary add-to-cart" 
+                                    data-id="12" 
+                                    data-name="Cheese Danish" 
+                                    data-price="3.50" 
+                                    data-image="/placeholder.svg?height=200&width=200">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sandwiches -->
+                <div class="menu-item" data-category="sandwiches">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Club Sandwich">
+                    <div class="item-info">
+                        <h3>Club Sandwich</h3>
+                        <p>Turkey, bacon, lettuce, tomato on toasted bread</p>
+                        <div class="item-footer">
+                            <span class="price">$8.50</span>
+                            <button class="btn btn-primary add-to-cart" 
+                                    data-id="13" 
+                                    data-name="Club Sandwich" 
+                                    data-price="8.50" 
+                                    data-image="/placeholder.svg?height=200&width=200">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="sandwiches">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Grilled Cheese">
+                    <div class="item-info">
+                        <h3>Grilled Cheese</h3>
+                        <p>Classic grilled cheese on sourdough</p>
+                        <div class="item-footer">
+                            <span class="price">$6.25</span>
+                            <button class="btn btn-primary add-to-cart" 
+                                    data-id="14" 
+                                    data-name="Grilled Cheese" 
+                                    data-price="6.25" 
+                                    data-image="/placeholder.svg?height=200&width=200">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="sandwiches">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Veggie Wrap">
+                    <div class="item-info">
+                        <h3>Veggie Wrap</h3>
+                        <p>Fresh vegetables in a spinach tortilla</p>
+                        <div class="item-footer">
+                            <span class="price">$7.75</span>
+                            <button class="btn btn-primary add-to-cart" 
+                                    data-id="15" 
+                                    data-name="Veggie Wrap" 
+                                    data-price="7.75" 
+                                    data-image="/placeholder.svg?height=200&width=200">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Brew & Bean</h3>
+                    <p>Crafting exceptional coffee experiences since 2010.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Brew & Bean. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
