@@ -4,7 +4,7 @@ const menuItems = [
         id: 1,
         name: "Espresso",
         category: "hot-coffee",
-        price: 3.50,
+        price: 20.50,
         description: "Rich and bold espresso shot",
         image: "https://www.caffesociety.co.uk/blog/wp-content/upLoads/2019/02/Caffe-Society-Espresso-Expresso-Epresso-Coffee.jpg"
     },
@@ -12,7 +12,7 @@ const menuItems = [
         id: 2,
         name: "Cappuccino",
         category: "hot-coffee",
-        price: 4.25,
+        price: 40.25,
         description: "Espresso with steamed milk and foam",
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Cappuccino_in_original.jpg/1200px-Cappuccino_in_original.jpg"
     },
@@ -20,7 +20,7 @@ const menuItems = [
         id: 3,
         name: "Latte",
         category: "hot-coffee",
-        price: 4.75,
+        price: 45.75,
         description: "Smooth espresso with steamed milk",
         image: "https://www.cuisinart.com/dw/image/v2/ABAF_PRD/on/demandware.static/-/Sites-us-cuisinart-sfra-Library/default/dw2ca0aa66/images/recipe-Images/cafe-latte1-recipe.jpg?sw=1200&sh=630"
     },
@@ -28,7 +28,7 @@ const menuItems = [
         id: 4,
         name: "Americano",
         category: "hot-coffee",
-        price: 3.75,
+        price: 30.75,
         description: "Espresso with hot water",
         image: "https://assets.beanbox.com/blog_images/AB7ud4YSE6nmOX0iGlgA.jpeg"
     },
@@ -36,7 +36,7 @@ const menuItems = [
         id: 5,
         name: "Mocha",
         category: "hot-coffee",
-        price: 5.25,
+        price: 50.25,
         description: "Espresso with chocolate and steamed milk",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw3tC7AUTzU2KVzoeAP41P3kAYROR840Dtuw&s"
     },
@@ -44,7 +44,7 @@ const menuItems = [
         id: 6,
         name: "Iced Coffee",
         category: "cold-coffee",
-        price: 3.95,
+        price: 35.95,
         description: "Chilled coffee served over ice",
         image: "https://www.allrecipes.com/thmb/Hqro0FNdnDEwDjrEoxhMfKdWfOY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/21667-easy-iced-coffee-ddmfs-4x3-0093-7becf3932bd64ed7b594d46c02d0889f.jpg"
     },
@@ -52,7 +52,7 @@ const menuItems = [
         id: 7,
         name: "Cold Brew",
         category: "cold-coffee",
-        price: 4.50,
+        price: 40.50,
         description: "Smooth cold-brewed coffee",
         image: "https://lifesimplified.gorenje.com/wp-content/uploads/2024/06/gorenje-blog-refreshing_cold_brew_coffee.jpg"
     },
@@ -60,7 +60,7 @@ const menuItems = [
         id: 8,
         name: "Frappuccino",
         category: "cold-coffee",
-        price: 5.75,
+        price: 50.75,
         description: "Blended iced coffee with whipped cream",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbrK83EquDfitjzSW8MPpL1rY1EGjPhm23RQ&s"
     },
@@ -68,7 +68,7 @@ const menuItems = [
         id: 9,
         name: "Iced Latte",
         category: "cold-coffee",
-        price: 4.95,
+        price: 20.95,
         description: "Espresso with cold milk over ice",
         image: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/iced-latte-30188f7.jpg"
     },
@@ -76,7 +76,7 @@ const menuItems = [
         id: 10,
         name: "Croissant",
         category: "pastries",
-        price: 2.95,
+        price: 25.95,
         description: "Buttery, flaky French pastry",
         image: "https://baranbakery.com/wp-content/uploads/2024/07/Croissants-20-500x500.jpg"
     },
@@ -84,7 +84,7 @@ const menuItems = [
         id: 11,
         name: "Blueberry Muffin",
         category: "pastries",
-        price: 3.25,
+        price: 30.25,
         description: "Fresh baked muffin with blueberries",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUzt_RD7uxGPxeR2sQVYnTKtQALj-IIMP5eA&s"
     },
@@ -92,7 +92,7 @@ const menuItems = [
         id: 12,
         name: "Danish Pastry",
         category: "pastries",
-        price: 3.75,
+        price: 20.75,
         description: "Sweet pastry with fruit filling",
         image: "https://www.browneyedbaker.com/wp-content/uploads/2020/03/BEB-danish-pastries-36-square.jpg"
     },
@@ -100,7 +100,7 @@ const menuItems = [
         id: 13,
         name: "Club Sandwich",
         category: "sandwiches",
-        price: 8.95,
+        price: 30.95,
         description: "Triple-decker with turkey, bacon, and vegetables",
         image: "https://www.jocooks.com/wp-content/uploads/2020/10/club-sandwich-1-9.jpg"
     },
@@ -108,7 +108,7 @@ const menuItems = [
         id: 14,
         name: "Grilled Cheese",
         category: "sandwiches",
-        price: 6.50,
+        price: 60.50,
         description: "Classic grilled cheese with tomato",
         image: "https://cdn.loveandlemons.com/wp-content/uploads/2023/01/grilled-cheese.jpg"
     },
@@ -116,13 +116,13 @@ const menuItems = [
         id: 15,
         name: "BLT Sandwich",
         category: "sandwiches",
-        price: 7.75,
+        price: 45.75,
         description: "Bacon, lettuce, and tomato on toasted bread",
         image: "https://dyvn6jpt1f0d3.cloudfront.net/wp-content/uploads/2023/10/14154227/BLT-for-recipe-1-6-1200x675.jpeg"
     }
 ];
 
-// Cart functionality
+// Cart functionality Storing In Local Storage
 let cart = JSON.parse(localStorage.getItem('coffeeShopCart')) || [];
 
 // DOM elements
@@ -209,7 +209,7 @@ function displayMenuItems(items) {
                 <h3>${item.name}</h3>
                 <p>${item.description}</p>
                 <div class="menu-item-footer">
-                    <span class="price">$${item.price.toFixed(2)}</span>
+                    <span class="price">₵${item.price.toFixed(2)}</span>
                     <button class="add-to-cart" onclick="addToCart(${item.id})">
                         Add to Cart
                     </button>
@@ -283,7 +283,7 @@ function updateCartItems() {
             <img src="${item.image}" alt="${item.name}">
             <div class="cart-item-details">
                 <h4>${item.name}</h4>
-                <div class="cart-item-price">$${item.price.toFixed(2)}</div>
+                <div class="cart-item-price">₵${item.price.toFixed(2)}</div>
                 <div class="quantity-controls">
                     <button class="quantity-btn" onclick="updateQuantity(${item.id}, -1)">-</button>
                     <span class="quantity">${item.quantity}</span>
@@ -364,7 +364,7 @@ function displayCheckoutItems() {
                 <h4>${item.name}</h4>
                 <div class="item-quantity">Quantity: ${item.quantity}</div>
             </div>
-            <div class="item-price">$${(item.price * item.quantity).toFixed(2)}</div>
+            <div class="item-price">₵${(item.price * item.quantity).toFixed(2)}</div>
         `;
         checkoutItems.appendChild(checkoutItemElement);
     });
@@ -493,14 +493,18 @@ document.querySelectorAll('.nav-link').forEach(link => {
 // Add scroll effect to navbar
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 100) {
+    if (window.scrollY > 60) {
+        navbar.classList.add("scrolled");
         navbar.style.background = 'rgba(44, 24, 16, 0.95)';
         navbar.style.backdropFilter = 'blur(10px)';
     } else {
+        navbar.classList.remove("scrolled");
         navbar.style.background = '#2c1810';
         navbar.style.backdropFilter = 'none';
     }
 });
+
+
 
 // Initialize animations on scroll
 const observerOptions = {
