@@ -492,20 +492,24 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
 // Add scroll effect to navbar
 window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(44, 24, 16, 0.95)';
-        navbar.style.backdropFilter = 'blur(10px)';
-    } else {
-        navbar.style.background = '#2c1810';
-        navbar.style.backdropFilter = 'none';
-    }
+  const navbar = document.querySelector('.navbar');
+  const navmenu = document.querySelector('.navmenu');
+  navbar.style.background =
+    window.scrollY > 100
+      ? 'rgba(44, 24, 16, 0.85)'
+      : 'rgba(44, 24, 16, 1)';
+    navmenu.style.background =
+    window.scrollY > 100
+      ? 'rgba(44, 24, 16, 0.85)'
+      : 'rgba(44, 24, 16, 1)';
 });
 
-window.addEventListener('click', (e) => {
-    if (e.target === navbar) {
-        closenavbar();
-    }
+const hamburger = document.querySelector(".hamburger");
+const navLink = document.querySelector(".nav-link");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("open");
+  navLink.classList.toggle("active");
 });
 
 
