@@ -6,7 +6,7 @@ const menuItems = [
         category: "hot-coffee",
         price: 20.50,
         description: "Rich and bold espresso shot",
-        image: "https://www.caffesociety.co.uk/blog/wp-content/upLoads/2019/02/Caffe-Society-Espresso-Expresso-Epresso-Coffee.jpg"
+        image: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Tazzina_di_caff%C3%A8_a_Ventimiglia.jpg"
     },
     {
         id: 2,
@@ -493,17 +493,20 @@ document.querySelectorAll('.nav-link').forEach(link => {
 // Add scroll effect to navbar
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 60) {
-        navbar.classList.add("scrolled");
+    if (window.scrollY > 100) {
         navbar.style.background = 'rgba(44, 24, 16, 0.95)';
         navbar.style.backdropFilter = 'blur(10px)';
     } else {
-        navbar.classList.remove("scrolled");
         navbar.style.background = '#2c1810';
         navbar.style.backdropFilter = 'none';
     }
 });
 
+window.addEventListener('click', (e) => {
+    if (e.target === navbar) {
+        closenavbar();
+    }
+});
 
 
 // Initialize animations on scroll

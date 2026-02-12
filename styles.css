@@ -70,9 +70,17 @@ body {
     overflow-x: hidden;
 }
 
-body {
-  background: linear-gradient(135deg, #f6efe7, #e9e2d8, #f8f8f8);
+.index-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: radial-gradient(circle at center, rgba(212, 165, 116, 0.08), transparent 55%);
+    z-index: -1;
 }
+
 
 
 .container {
@@ -125,7 +133,7 @@ body {
 }
 
 .nav-logo span {
-    color: #595967;
+    color: #ccc;
 }
 
 .navbar.scrolled nav {
@@ -202,8 +210,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
-    padding: 120px 20px 80px;
+    padding: 100px 20px 80px;
     display: flex;
     align-items: center;
     min-height: 80vh;
@@ -217,10 +224,16 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #2c1810;
     margin-bottom: 1rem;
     line-height: 1.2;
+}
+
+.hero-content h1 span {
+    font-size: 4.5rem;
+    color: #2c1810;
+    font-weight: bolder;
 }
 
 .hero-content p {
@@ -229,7 +242,8 @@ body {
     margin-bottom: 2rem;
 }
 
-.cta-btn {
+button {
+    font-family: inherit;
     background: #d4a574;
     color: white;
     border: none;
@@ -239,6 +253,54 @@ body {
     cursor: pointer;
     transition: all 0.3s;
 }
+
+.cta-btn {
+  background: #e8b35c;
+  border: 1px solid var(--glass-bg-strong);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 12px 40px rgba(212, 165, 116, 0.5);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  letter-spacing: .9px;
+}
+
+.borderpulse {
+    border: 2px solid var(--primary);
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
+.cta-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.cta-btn:hover::before {
+    left: 100%;
+}
+
+.cta-btn:hover {
+    box-shadow: 0 12px 40px rgba(212, 165, 116, 0.5);
+}
+
+
 
 .cta-btn:hover {
     background: #b8935f;
@@ -251,9 +313,9 @@ body {
 
 .hero-image img {
     width: 100%;
-    height: auto;
+    height: 500px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px var(--shadow-deep);
 }
 
 /* Menu Section */
@@ -278,9 +340,11 @@ body {
 }
 
 .category-btn {
+    padding: 12px 16px;
     background: transparent;
-    border: 2px solid #d4a574;
+    border: 1.5px solid var(--accent);
     color: #d4a574;
+    box-shadow: var(--shadow-soft);
     padding: 10px 20px;
     border-radius: 25px;
     cursor: pointer;
@@ -302,8 +366,8 @@ body {
 
 .menu-item {
     background: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     overflow: hidden;
     transition: transform 0.3s;
 }
@@ -948,15 +1012,22 @@ body {
     }
     
     .nav-menu {
+        border: 1px solid var(--glass-bg-strong);
+        border-radius: var(--radius-lg);
         position: fixed;
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: #2c1810;
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+        background: var(--glass-bg-strong);
+        background-color: #2c1810;
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border-bottom: 1px solid var(--glass-border);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-soft);
         padding: 20px 0;
     }
     
