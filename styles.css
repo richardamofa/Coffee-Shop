@@ -695,7 +695,7 @@ button {
 }
 
 .checkout-btn {
-    width: 100%;
+    width: 180px;
     background: #d4a574;
     color: white;
     border: none;
@@ -704,6 +704,7 @@ button {
     cursor: pointer;
     font-size: 1.1rem;
     transition: background 0.3s;
+    margin-bottom: 3rem;
 }
 
 .checkout-btn:hover {
@@ -800,6 +801,10 @@ button {
     padding: 20px;
 }
 
+.checkout-header {
+    margin-top: 3rem;
+}
+
 .checkout-sections {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -807,6 +812,7 @@ button {
 }
 
 .order-summary {
+    margin-bottom: 3rem;
     background: #f8f8f8;
     padding: 20px;
     border-radius: 10px;
@@ -879,9 +885,24 @@ button {
 .form-group textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 8px;
     font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+  border-radius: 12px;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(212, 165, 116, 0.08);
 }
 
 .place-order-btn {
