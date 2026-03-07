@@ -211,7 +211,7 @@ function displayMenuItems(items) {
                 <div class="menu-item-footer">
                     <span class="price">₵${item.price.toFixed(2)}</span>
                     <button class="add-to-cart" onclick="addToCart(${item.id})">
-                        Add to Cart
+                        Purchase
                     </button>
                 </div>
             </div>

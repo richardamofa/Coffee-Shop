@@ -317,8 +317,6 @@ button {
     box-shadow: 0 12px 40px rgba(212, 165, 116, 0.5);
 }
 
-
-
 .cta-btn:hover {
     background: #b8935f;
     transform: translateY(-2px);
@@ -428,7 +426,10 @@ button {
 }
 
 .add-to-cart {
+    width: 100%;
+    max-width: 120px;
     background: #d4a574;
+    box-shadow: var(--shadow-soft);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -552,6 +553,12 @@ button {
     border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 1rem;
+    transition: focus-visible .3s ease;
+}
+
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible {
+    outline-color: var(--primary);
 }
 
 .contact-form button {
@@ -651,11 +658,12 @@ button {
 }
 
 .quantity-btn {
+    color: #1e1e2f;
     background: #f0f0f0;
     border: none;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
+    border-radius: 999px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -695,7 +703,7 @@ button {
 }
 
 .checkout-btn {
-    width: 180px;
+    width: 100%;
     background: #d4a574;
     color: white;
     border: none;
